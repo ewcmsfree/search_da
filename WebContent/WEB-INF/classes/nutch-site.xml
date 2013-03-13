@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+    <property> 　　
+　　    <name>searcher.dir</name> 　　
+　　    <value>/home/www/crawl</value> 　　
+    </property>
+		<property>
+  		<name>searcher.summary.length</name>
+  			<value>200</value>
+  			<description>
+  				The total number of terms to display in a hit summary.
+  			</description>
+</property>
+</configuration>
