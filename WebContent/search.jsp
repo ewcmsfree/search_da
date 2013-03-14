@@ -155,7 +155,7 @@
 <html lang="<%= language %>">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
-<title><%=htmlQueryString%> - 中国瑞昌网为您服务！</title>
+<title><%=htmlQueryString%> - 中国德安网为您服务！</title>
 <link href="/css/ruichang.css" rel="stylesheet" type="text/css" />
 <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
@@ -167,6 +167,29 @@
 function queryfocus() { document.search.query.focus(); }
 // -->
 </script>
+<style type="text/css">
+body{ margin:0 auto; font-size:12px; font-family:Arial, Helvetica, sans-serif; line-height:1.5; background:#CCC; }
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p{ padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{ font-size:14px; }
+ul{ list-style:none;}
+img{ border:0px; margin: 0px; padding: 0px; }
+a{ color:#555; text-decoration:none; }
+a:hover{ color:#F00; text-decoration: underline; }
+.clearfloat{clear:both; height:0; font-size:1px; line-height:0px; }
+#container{ width:900px; border:#999 1px solid; background:#FFF; padding:20px; margin:0 auto; }
+.bar{ height:35px; line-height:35px; border-bottom:1px dotted #999; }
+.bar a{ color:#C00; }
+.srh{ padding:10px; text-align:center; font-size:14px; }
+.btn{ font-size:14px; }
+.list ul{ border:#CCC 1px solid; padding:10px; background:#F0F0F0; }
+.list ul li{ height:20px; line-height:20px; }
+.tit{ font-size:14px; }
+.tit a{ color:#C00; }
+.yy{ text-indent:2em; }
+.yy a{ color:#000; }
+p{ height:40px; line-height:40px; padding-left:100px; }
+p span{ padding:5px; }
+</style>
 </head>
 
 <body onLoad="queryfocus();">
@@ -181,18 +204,17 @@ function queryfocus() { document.search.query.focus(); }
             <a href="/wangzhanweihu/guanyuwomen" target="_blank">关于我们</a>
 <a href="/wangzhanweihu/wangzhandaohang" target="_blank">网站导航</a>
         </li>
-        <li>
-            <form name="searchform" method="get" action="/search/search.jsp" target="_blank">站内检索:
+    </ul>
+</div>
+<div id="container">
+ <div class="bar"><a href="#">德安网首页</a>＞＞网站检索</div>
+            <form name="searchform" method="get" action="/search/search.jsp" target="_blank">
                 <input type="hidden" name="lang" value="zh"/>
                 <input type="hidden" name="hitsPerSite" value="0"/>
-                <input type="hidden" name="clustering" value=""/>
-                <input class="search_area" name="query" type="text" value="请输入关键字" onclick="this.value='';"/>
-                <input class="search_button" name="button" type="submit" value="搜索" />
-                <input class="ad_search_button" name="advbutton" type="button" value="高级检索" onclick="window.open('/component/online/advquery.do');"/>
-            </form>
-        </li>
-    </ul>
-</div><!--顶部信息栏结束-->
+                <input type="hidden" name="clustering" value=""/> 
+ <div class="srh">标题：<input class="search_area" name="query" type="text" value="请输入关键字" onclick="this.value='';"/><input class="btn" name="" type="submit" value="检索" /><input name="" class="btn" type="button" value="高级检索" onclick="window.open('/component/online/advquery.do');"/></div>
+</div>
+<!--顶部信息栏结束-->
 <div id="whole_bg">
   <div id="content">
 
